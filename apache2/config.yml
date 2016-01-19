@@ -1,0 +1,5 @@
+name: Apache2
+description: |
+  Apache HTTP Server
+version: alpha
+category: Web Server

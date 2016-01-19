@@ -1,0 +1,21 @@
+.catalog:
+  name: "Apache2"
+  version: "alpha"
+  description: "Apache HTTP Server"
+  uuid: apache2-0
+  minimum_rancher_version: v0.46.0
+  questions:
+    - variable: "CONTAINER_PORT"
+      description: "Container port"
+      label: "Port"
+      type: "string"
+      required: true
+      default: "80"
+    - variable: "DOCUMENT_ROOT"
+      description: "Document root"
+      label: "Document root"
+      type: "string"
+      required: true
+      default: "/home/"
+web:
+  scale: 1

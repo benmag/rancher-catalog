@@ -1,0 +1,6 @@
+apache2: 
+	image: benmag/docker-bootstrap-apache
+	ports:
+		- "${CONTAINER_PORT}:80"
+	volumes:
+    - "${DOCUMENT_ROOT}:/app:rw"
